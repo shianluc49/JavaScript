@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="multimedia/2622693.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- Titulo -->
+    <title>Chrollo-Store</title>
+
+</head>
+
+<body>
+    <main class="contenido">
+        <div class="cambio">
+            <h1>Casa de cambio</h1>
+            <form class="formulario">
+                <p>seleccionar moneda</p>
+                <input type="radio" name="cambio" id="uno">Dolar
+                <input type="radio" name="cambio" id="dos">Euro
+                <p>Ingrese monto a cambiar:</p>
+                <input type="number" id="valor" min="1" max="100000">
+                <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
+                <input type="text" id="salida">
+            </form>
+        </div>
+        <div class="cesar">
+            <h2>Cifrador</h2>
+            <form id="cifrador" autocomplete="off">
+                <input id="input-original" spellcheck="false" placeholder="Ingrese el texto" type="text" name="text">
+            </form>
+            <div id="resultado"></div>
+            <div class="rango">
+                <input id="rango" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+                <output>10</output>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/main.js"></script>
+
+</html>
